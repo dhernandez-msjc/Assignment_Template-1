@@ -3,4 +3,4 @@ project(Assignment_Template)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(main main.cpp)
+add_executable(main main.cpp data_store.cpp data_store.h)
