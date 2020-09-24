@@ -5,7 +5,9 @@
 
 #include<string>
 #include <vector>
-using namespace std;
+
+// using namespace std; // TODO does not belong here, Penalty will increase
+
 class DataStore
 {
 private:
@@ -16,6 +18,8 @@ public:
     DataStore();
     void addCity(string city, int population);
     void listData();
+    
+    // Strings should be passed by reference and protected with const if unchanged
     void searchItem(string city);
 };
 
